@@ -6,7 +6,9 @@ const ProductCard = ({ title, description, stock, image }) => {
             <img src={image} alt={title} />
             <h2>{title}</h2>
             <p>{description}</p>
-            <p>{stock ? 'In Stock' : 'Out of Stock'}</p>
+            <p className={`stock-status ${stock ? 'in-stock' : 'out-of-stock'}`}>
+                {stock ? 'In Stock' : 'Out of Stock'}
+            </p>
         </div>
     );
 };

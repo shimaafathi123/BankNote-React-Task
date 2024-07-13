@@ -15,6 +15,28 @@
     font-size: 1.5em;
 }
 
+.product-card img {
+    width: 150px;  
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
 .product-card p {
-    color: #555;
+    height: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+}
+.stock-status {
+    font-weight: bold; 
+}
+
+.in-stock {
+    color: green;
+}
+
+.out-of-stock {
+    color: red; 
 }
