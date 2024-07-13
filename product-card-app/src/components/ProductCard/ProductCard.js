@@ -9,6 +9,14 @@ const ProductCard = ({ title, description, stock, image }) => {
             <p className={`stock-status ${stock ? 'in-stock' : 'out-of-stock'}`}>
                 {stock ? 'In Stock' : 'Out of Stock'}
             </p>
+            <div className="button-container">
+                <button className="buy-button">
+                    <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+                </button>
+                <button className="favorite-button">
+                    <i className="fa fa-heart" aria-hidden="true"></i>
+                </button>
+            </div>
         </div>
     );
 };
