@@ -6,6 +6,8 @@ import img3 from '../../assets/images/img3.jpg';
 import img4 from '../../assets/images/img4.jpg';
 import img5 from '../../assets/images/img5.jpg';
 import img6 from '../../assets/images/img6.jpg';
+import './ProductList.css'
+
 
 const images = {
     img1,
