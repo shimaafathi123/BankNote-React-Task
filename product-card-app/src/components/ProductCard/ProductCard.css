@@ -9,11 +9,23 @@
     justify-content: space-between; 
 }
 
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        flex: 1 1 calc(100% - 20px); 
+    }
+}
+
 .product-card img {
     border-radius: 8px;
-    width: 100%; /* Full width of the card */
-    max-height: 300px; /* Maintains maximum height */
-    object-fit: contain; /* Ensures no cropping */
+    width: 100%; 
+    max-height: 300px;
+    object-fit: contain; 
 }
 
 .product-card h2 {
