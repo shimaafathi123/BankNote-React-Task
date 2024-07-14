@@ -1,25 +1,28 @@
 import React from 'react';
-import './ProductCard.css'
+import { Card, Button } from 'react-bootstrap';
+import './ProductCard.css';
+
 const ProductCard = ({ title, description, stock, image }) => {
     return (
-        <div className="product-card">
-            <img src={image} alt={title} />
-            <h2>
-                {title}
-                <button className="favorite-button">
-                    <i className="fa fa-heart" aria-hidden="true"></i>
-                </button>
-            </h2>
-            <p>{description}</p>
-            <p className={`stock-status ${stock ? 'in-stock' : 'out-of-stock'}`}>
-                {stock ? 'In Stock' : 'Out of Stock'}
-            </p>
-            <button className="buy-button">
-                <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-            </button>
-        </div>
+        <Card className="product-card">
+            <Card.Img variant="top" src={image} alt={title} />
+            <Card.Body>
+                <Card.Title>
+                    {title}
+                    <Button variant="link" className="favorite-button">
+                        <i className="fa fa-heart" aria-hidden="true"></i>
+                    </Button>
+                </Card.Title>
+                <Card.Text className="desc">{description}</Card.Text>
+                <p className={`stock-status ${stock ? 'in-stock' : 'out-of-stock'}`}>
+                    {stock ? 'In Stock' : 'Out of Stock'}
+                </p>
+                <Button variant="success" className="buy-button">
+                    <i className="fa fa-shopping-cart" aria-hidden="true"></i> Buy
+                </Button>
+            </Card.Body>
+        </Card>
     );
 };
-
 
 export default ProductCard;
