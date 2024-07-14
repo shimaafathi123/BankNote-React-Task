@@ -11,29 +11,31 @@
 
 .product-card img {
     border-radius: 8px;
-    max-height: 150px; 
-    object-fit: cover; 
+    width: 100%; /* Full width of the card */
+    max-height: 300px; /* Maintains maximum height */
+    object-fit: contain; /* Ensures no cropping */
 }
 
 .product-card h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
+    font-size: 1.2em; 
+    margin: 8px 0; 
 }
 
 .product-card p {
-    margin: 10px 0;
+    margin: 1px 0;
     flex-grow: 1; 
-    height: 4.5em; 
-    line-height: 1.5; 
+    height: 3.5em; 
+    line-height: 1.4; 
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
 }
 
 .stock-status {
     font-weight: bold;
+    font-size: 0.9em; 
 }
 
 .in-stock {
@@ -48,19 +50,22 @@
     background-color: #c7be6b !important;
     border: none !important;
     color: white !important;
-    
 }
+
 .buy-button {
     width: 100%; 
-    padding: 10px; 
+    padding: 8px; 
 }
-.favorite-button{
-    margin-left: 10px;
+
+.favorite-button {
+    margin-left: 5px; 
+    padding: 8px; 
 }
+
 .favorite-button:hover, .buy-button:hover {
     background-color: #1c1f00 !important;
 }
 
 .fa {
-    font-size: 24px;
+    font-size: 20px; 
 }
