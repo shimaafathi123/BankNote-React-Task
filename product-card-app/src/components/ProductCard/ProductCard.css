@@ -48,8 +48,15 @@
     background-color: #c7be6b !important;
     border: none !important;
     color: white !important;
+    
 }
-
+.buy-button {
+    width: 100%; 
+    padding: 10px; 
+}
+.favorite-button{
+    margin-left: 10px;
+}
 .favorite-button:hover, .buy-button:hover {
     background-color: #1c1f00 !important;
 }
